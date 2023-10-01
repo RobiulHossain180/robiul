@@ -124,3 +124,6 @@ a {
 a:hover {
     color: #007BFF;
 }
+p{
+    text-align: center;
+}

@@ -210,5 +210,7 @@ input[type=checkbox] {
     border-collapse: collapse;
     font-size: 50%;
   }
-  
+  iframe {
+    height: 350px;
+  }
 }

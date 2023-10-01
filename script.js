@@ -1,10 +1,12 @@
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
 const fullscreenButton = document.getElementById("fullscreenButton");
-        const fullscreenContainer = document.getElementById("fullscreenContainer");
-        const searchInput = document.getElementById("searchInput");
-        const table = document.querySelector("table");
-        const rows = table.getElementsByTagName("tr");
-     // JavaScript for showing/hiding the scroll-to-top button
-     window.addEventListener("scroll", function() {
+const fullscreenContainer = document.getElementById("fullscreenContainer");
+const searchInput = document.getElementById("searchInput");
+const table = document.querySelector("table");
+const rows = table.getElementsByTagName("tr");
+// JavaScript for showing/hiding the scroll-to-top button
+    window.addEventListener("scroll", function() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.getElementById("scrollToTopButton").style.display = "block";
         } else {
@@ -12,7 +14,7 @@ const fullscreenButton = document.getElementById("fullscreenButton");
         }
     });
 
-    // JavaScript for scrolling to the top of the page
+// JavaScript for scrolling to the top of the page
     document.getElementById("scrollToTopButton").addEventListener("click", function() {
         scrollToTop();
     });
@@ -48,18 +50,18 @@ const fullscreenButton = document.getElementById("fullscreenButton");
             }
             return false;
         }
-        // Function to request full screen
-        function requestFullScreen() {
-            if (fullscreenContainer.requestFullscreen) {
-                fullscreenContainer.requestFullscreen();
-            } else if (fullscreenContainer.mozRequestFullScreen) {
-                fullscreenContainer.mozRequestFullScreen();
-            } else if (fullscreenContainer.webkitRequestFullscreen) {
-                fullscreenContainer.webkitRequestFullscreen();
-            } else if (fullscreenContainer.msRequestFullscreen) {
+// Function to request full screen
+    function requestFullScreen() {
+        if (fullscreenContainer.requestFullscreen) {
+            fullscreenContainer.requestFullscreen();
+        } else if (fullscreenContainer.mozRequestFullScreen) {
+            fullscreenContainer.mozRequestFullScreen();
+        } else if (fullscreenContainer.webkitRequestFullscreen) {
+             fullscreenContainer.webkitRequestFullscreen();
+        } else if (fullscreenContainer.msRequestFullscreen) {
                 fullscreenContainer.msRequestFullscreen();
-            }
         }
+    }
         fullscreenButton.addEventListener("click", () => {
             requestFullScreen();
         });

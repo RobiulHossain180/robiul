@@ -1,0 +1,126 @@
+body {
+    width: 90%;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f2f2f2;
+}
+/* Navigation bar styles */
+nav {
+    background-color: #6485f0;
+    text-align: center;
+    padding: 20px;
+}
+nav ul {
+    display: inline; /* Display the menu items horizontally */
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Add some spacing between menu items */
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 100%;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #265ef7;
+    color: #ffffff;
+}
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.top-button {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 5%; 
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 40px 40px;
+    cursor: pointer;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    text-align: center;
+    color: #0046ad;
+}
+p {
+    text-align: justify;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#search-results {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+}
+.channel-list {
+    width: 300px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.channel {
+    text-align: center;
+    width: 90%;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color: #007BFF;
+}

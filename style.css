@@ -200,7 +200,9 @@ input[type=checkbox] {
       border-collapse: collapse;
       font-size: 100%;
   }
-
+  iframe {
+    height: 400px;
+  }
 }
 @media (max-width:600px){
   table {

@@ -65,3 +65,13 @@ const rows = table.getElementsByTagName("tr");
         fullscreenButton.addEventListener("click", () => {
             requestFullScreen();
         });
+        
+
+const countElement = document.getElementById('count');
+update();
+function update(){
+     fetch('https://api.countapi.xyz/hit/https://robiulhossain180.github.io/robiul/?amount=1')
+     .then(res=> res.json()).then(res => {
+        countElement.innerHTML = res.value;
+     })
+}

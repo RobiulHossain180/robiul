@@ -171,9 +171,6 @@ input[type=checkbox] {
     font-size: 24px;
     user-select: none;
   }
-  img {
-    width: 100%;
-  }
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
    .menu {
@@ -214,3 +211,23 @@ input[type=checkbox] {
     height: 350px;
   }
 }
+
+.count{
+  box-sizing: border-box;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin: 0;
+}
+h3{
+  font-size: 100px;
+  margin: 0;
+}
+.count p {
+  letter-spacing: 2px;
+  margin: 0;
+  
+}
+

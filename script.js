@@ -70,7 +70,7 @@ const rows = table.getElementsByTagName("tr");
 const countElement = document.getElementById('count');
 update();
 function update(){
-     fetch('https://api.countapi.xyz/hit/https://robiulhossain180.github.io/robiul/?amount=1')
+     fetch('https://api.countapi.xyz/hit/https://robiulhossain180.github.io/robiul/index.html/?amount=1')
      .then(res=> res.json()).then(res => {
         countElement.innerHTML = res.value;
      })

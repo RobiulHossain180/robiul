@@ -212,7 +212,7 @@ input[type=checkbox] {
   }
 }
 
-.count{
+.counter{
   box-sizing: border-box;
   flex-direction: column;
   display: flex;
@@ -222,12 +222,17 @@ input[type=checkbox] {
   margin: 0;
 }
 h3{
-  font-size: 100px;
+  font-size: 50px;
   margin: 0;
 }
-.count p {
-  letter-spacing: 2px;
-  margin: 0;
-  
+.column {
+  flex: 33.33%;
+  padding: 10px;
+  text-align: center;
 }
-
+.column p {
+  text-align: center;
+}
+.container1{
+   display: flex;
+}	

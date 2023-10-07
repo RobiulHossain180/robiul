@@ -36,50 +36,20 @@
      <button id="scrollToTopButton" class="top-button">UP</button>
      <div class="container1">
         <div class="column">
-            <p>Today's Views</p>
-            <h3 id="todayCounter">0</h3>
-        </div>
-        <div class="column">
-            <p> This Month's Views</p>
-            <h3 id="monthCount">0</h3>
-        </div>
-        <div class="column">
             <p>Total Views</p>
-            <h3 id="totalCounter">0</h3>
+            <h3 id="counter">0</h3>
         </div>
       </div>
     <script>
-        function updateCounter() {
-  // Get today's date
-  const today = new Date();
-  const todayDate = today.toISOString().slice(0, 10); // Get yyyy-mm-dd format
-
-  // Retrieve stored counts
-  let todayCount = JSON.parse(localStorage.getItem('todayCount')) || { date: todayDate, count: 0 };
-  let monthCount = JSON.parse(localStorage.getItem('monthCount')) || { date: todayDate.slice(0, 7), count: 0 };
-  let totalCount = parseInt(localStorage.getItem('totalCount')) || 0;
-
-  // Check if it's a new day, and reset the count if needed
-  if (todayCount.date !== todayDate) {
-    todayCount = { date: todayDate, count: 0 };
-  }
-
-  // Update counts
-  todayCount.count++;
-  monthCount.count++;
-  totalCount++;
-
-  // Store counts
-  localStorage.setItem('todayCount', JSON.stringify(todayCount));
-  localStorage.setItem('monthCount', JSON.stringify(monthCount));
-  localStorage.setItem('totalCount', totalCount);
-
-  // Update the displayed counters
-  document.getElementById('todayCounter').textContent = todayCount.count;
-  document.getElementById('monthCounter').textContent = monthCount.count;
-  document.getElementById('totalCounter').textContent = totalCount;
+        // Function to get and update the visitor count
+function updateCounter() {
+  let count = localStorage.getItem('visitCount') || 0;
+  count = parseInt(count, 10) + 1;
+  localStorage.setItem('visitCount', count);
+  document.getElementById('counter').textContent = count;
 }
 
+// Call the updateCounter function when the page loads
 updateCounter();
     </script>
     <footer>

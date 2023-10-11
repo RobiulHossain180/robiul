@@ -4,6 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICC Crecket World Cup 2023</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        tr:nth-child(-n+5) {
+        background-color: #83ff83;
+        }
+        tr:nth-child(n+6) {
+        background-color: #ff8383;
+        }
+    </style>
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -31,124 +39,106 @@
                 <tr>
                     <th>Pos</th>
                     <th>TEAM</th>
-                    <th>Pld</th>
+                    <th>M</th>
                     <th>W</th>
                     <th>L</th>
-                    <th>Tie</th>
-                    <th>NR</th>
                     <th>Pts</th>
                     <th>NRR</th>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>New Zealand</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>+2.149</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Pakistan</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>+1.620</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Bangladesh</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>+1.438</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>India</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>South Africa</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Australia</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Srilanka</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Afghanistan</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>-1.438</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>netherland</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>-1.620</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>England</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>-2.149</td>
-                </tr>
+                <div class="green">
+                    <tr>
+                        <td>1</td>
+                        <td>NZ</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>+1.958</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>PAK</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>+0.927</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>SA</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>+2.040</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>IND</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>+0.883</td>
+                    </tr>
+                </div>
+                <div class="red">
+                    <tr>
+                        <td>5</td>
+                        <td>ENG</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>+0.553</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>BAN</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>-0.653</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>AUS</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>-0.883</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>SL</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>-1.161</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>AFG</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>-1.438</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>NED</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>-1.800</td>
+                    </tr>
+                </div>
             </table>
         </div>
     </div>

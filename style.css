@@ -19,6 +19,9 @@ th {
     background-color: #265ef7;
     color: #ffffff;
 }
+.squads img{
+  width: 100%;
+}
 tr:nth-child(even) {
     background-color: #f4f4f4;
 }
@@ -73,7 +76,6 @@ p {
     margin-top: 20px;
     font-weight: bold;
 }
-
 h2{
     text-align: center;
 }
@@ -196,10 +198,11 @@ input[type=checkbox] {
       width: 100%;
       border-collapse: collapse;
       font-size: 100%;
-  }
-  iframe {
-    height: 400px;
-  }
+    }
+    iframe {
+      height: 400px;
+      width: 100%;
+    }
 }
 @media (max-width:600px){
   table {
@@ -207,32 +210,5 @@ input[type=checkbox] {
     border-collapse: collapse;
     font-size: 50%;
   }
-  iframe {
-    height: 350px;
-  }
 }
 
-.counter{
-  box-sizing: border-box;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  margin: 0;
-}
-h3{
-  font-size: 50px;
-  margin: 0;
-}
-.column {
-  flex: 33.33%;
-  padding: 10px;
-  text-align: center;
-}
-.column p {
-  text-align: center;
-}
-.container1{
-   display: flex;
-}	

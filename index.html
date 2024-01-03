@@ -1,41 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICC Crecket World Cup 2023</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>RobiulShop</title>
+<style>
+html, body {
+  width: 100vw;
+  overflow-x: hidden !important;
+  background: transparent;
+  z-index: 0;
+  font-family: 'brandon-grotesque', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+}
+
+* {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+
+.item {
+  display: inline-block;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  margin-right: 20px;
+  width: 300px;
+  height: 425px;
+  border-radius: 3px;
+  box-shadow: 3px 4px 12px 1px rgba(0,0,0,0.3);
+}
+
+.diamond-container {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -20px;
+  transition: all 0.3s ease-out;
+}
+
+.diamond {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+  background: #555;
+  overflow: hidden;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.25em;
+  letter-spacing: -0.5px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-out;
+}
+
+.diamond-wrapper {
+  margin-top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.diamond-content {
+  transform: rotate(-45deg);
+}
+.img-container {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  margin-top: 80px;
+}
+
+.bg-square {
+  position: absolute;
+  width: 135px;
+  height: 130px;
+  border: 12px solid rgba(51,51,51,0.1);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.item-img {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: -20px;
+  left: 0;
+  right: 0;
+}
+
+.content-text {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.item-name {
+  font-weight: 400;
+  font-size: 1.35em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.item-subtext-container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 0.8em;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #bbb;
+  text-align: center;
+}
+.view-more-btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+</style>
 </head>
-<body>
-    <h1>ICC Cricket World Cup 2023</h1>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <!-- USING CHECKBOX HACK -->
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-      
-            <!-- NAVIGATION MENUS -->
-            <div class="menu">
-                <li><a href="index.html" style="font-size: 120%;"><b>Home</b></a></li>
-                <li><a href="squads.html">Squads</a></li>
-                <li><a href="matches.html">Matches</a></li>
-                <li><a href="live.html">Live</a></li>
-                <li><a href="points-table.html">Points Table</a></li>
-            </div>
-          </ul>
-    </nav>
-    <div class="container">
-        <p>The Cricket World Cup 2023, also known as the ICC Cricket World Cup 2023, is the pinnacle of one-day international (ODI) cricket, organized by the International Cricket Council (ICC). It is one of the most eagerly anticipated events in the world of cricket, held every four years, and the 2023 edition marks the 13th installment of this prestigious competition.</p>
-
-        <p>This tournament is set to feature teams from around the globe, with top cricketing nations vying for the coveted title. It promises to be a thrilling spectacle, with intense rivalries, brilliant displays of skill, and memorable moments that will capture the hearts of cricket enthusiasts worldwide.</p>
-        <img src="https://resources.pulse.icc-cricket.com/ICC/photo/2023/09/28/8cb47afc-cc96-47d2-95a3-eeeb983ce0e0/Trophy.jpeg" alt="Cricket World Cup 2023" style="width: 90%; display: block; margin: auto;">
-        <p>The tournament is expected to showcase the talents of some of the world's finest cricketers as they compete for the honor of being crowned world champions. Cricket fans will eagerly follow the action, cheering for their favorite teams and players, and celebrating the spirit of the game.</p>
-
-        <p>The 2023 Cricket World Cup is not only a celebration of cricket but also a platform for building international camaraderie and promoting the sport to a global audience. With a rich history dating back to its inaugural edition in 1975, the Cricket World Cup has become an integral part of the cricketing calendar and a major sporting event, drawing attention from both dedicated fans and casual observers alike. As the tournament unfolds, it is sure to deliver excitement, drama, and a celebration of the great game of cricket.</p>
+<div class="items-container">
+    <div class="item">
+      <div class="diamond-container">
+        <div class="diamond">
+          <div class="diamond-wrapper">
+            <div class="diamond-content">৳300 </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-wrapper">
+        <div class="content-wrapper">
+          <div class="img-container">
+            <div class="bg-square"></div>
+            <img class="item-img" src="Book\01.jpg" />
+          </div>
+        </div>
     </div>
-     <button id="scrollToTopButton" class="top-button">UP</button>
-    <footer>
-        &copy; 2023 Robiul Hossain. All rights reserved.
-    </footer>
+    <a href="https://wa.me/+8801531540211" target="_blank"><div class="view-more-btn"><H5>Buy</H5></div></a>
+    </div>
+    <div class="item">
+      <div class="diamond-container">
+        <div class="diamond">
+          <div class="diamond-wrapper">
+            <div class="diamond-content">৳225 </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-wrapper">
+        <div class="content-wrapper">
+          <div class="img-container">
+            <div class="bg-square"></div>
+            <img class="item-img" src="Book\02.jpg" />
+          </div>
+        </div>
+    </div>
+    <a href="https://wa.me/+8801531540211" target="_blank"><div class="view-more-btn"><H5>Buy</H5></div></a>
+    </div>
+    <div class="item">
+      <div class="diamond-container">
+        <div class="diamond">
+          <div class="diamond-wrapper">
+            <div class="diamond-content">৳264 </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-wrapper">
+        <div class="content-wrapper">
+          <div class="img-container">
+            <div class="bg-square"></div>
+            <img class="item-img" src="Book\03.jpg" />
+          </div>
+        </div>
+    </div>
+    <a href="https://wa.me/+8801531540211" target="_blank"><div class="view-more-btn"><H5>Buy</H5></div></a>
+    </div>
+  </div>
 </body>
-</html>
+</html>                                		
